@@ -3,7 +3,7 @@ import HelloWorld from './components/HelloWorld.vue'
 import {ref, onMounted} from 'vue'
 import PocketBase from 'pocketbase'
 
-con
+
 const pb = new PocketBase('http://127.0.0.1:8090')
 const hi = "My location is "
 const isTrue = ref(false)
@@ -95,7 +95,7 @@ onMounted(()=>{//want to get something when page load
       <div class="flex gap-2 mb-4">
           <input type="text" 
             v-model="todoInput" 
-            class="flex-1 border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500"
+            class="flex-1 border border-gray-300 text-white rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500"
             placeholder="Enter new todo">
           <button 
             @click="createTodo" 
